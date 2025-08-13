@@ -1,0 +1,326 @@
+/* Reset e configurações globais */
+:root {
+    --cor-primaria: #191919;
+    --cor-secundaria: #4F3529;
+    --cor-terciaria: #E8C39E;
+    --cor-quaternaria: #E3D1BE;
+    --cor-branca: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--cor-quaternaria);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-primaria);
+    background: var(--cor-terciaria);
+    min-height: 100vh;
+    background-color: var(--cor-quaternaria);
+}
+
+/* Título Principal */
+.about-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título Principal */
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: var(--cor-quaternaria);
+    position: relative;
+    padding: 80px 0;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    max-width: 800px;
+    line-height: 1.4;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção 13: Sobre a Jaqueline */
+.about-section {
+    background: var(--cor-quaternaria);
+    padding: 40px 0 100px 0;
+    position: relative;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    color: var(--cor-primaria);
+}
+
+.about-greeting {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-description p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-conclusion {
+    font-weight: 700 !important;
+    color: var(--cor-primaria) !important;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Botão CTA Final */
+.cta-button {
+    display: block;
+    background: var(--cor-secundaria);
+    color: var(--cor-branca);
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(79, 53, 41, 0.3);
+    font-family: 'Inter', sans-serif;
+    min-width: 400px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(79, 53, 41, 0.4);
+    background: #6B4F3F;
+}
+
+/* Responsividade para o título principal */
+@media (max-width: 1024px) {
+    .about-section h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        min-height: 50vh;
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .cta-button {
+        min-width: 350px;
+        padding: 18px 32px;
+        font-size: 1.1rem;
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        min-height: 40vh;
+        padding: 40px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .cta-button {
+        min-width: 300px;
+        padding: 16px 24px;
+        font-size: 1rem;
+        margin: 30px auto 0 auto;
+    }
+}
+
+/* Responsividade para a seção 13 */
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .about-name {
+        font-size: 3rem;
+    }
+    
+    .about-title {
+        font-size: 1.2rem;
+    }
+    
+    .about-description p {
+        font-size: 1rem;
+    }
+    
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 80px 0;
+    }
+    
+    .about-name {
+        font-size: 2.5rem;
+    }
+    
+    .about-title {
+        font-size: 1.1rem;
+    }
+    
+    .about-description p {
+        font-size: 0.95rem;
+    }
+    
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 60px 0;
+    }
+    
+    .about-name {
+        font-size: 2rem;
+    }
+    
+    .about-title {
+        font-size: 1rem;
+    }
+    
+    .about-description p {
+        font-size: 0.9rem;
+    }
+    
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+}
